@@ -1,0 +1,232 @@
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Palatino Linotype */
+@font-face {
+    font-family: 'Palatino Linotype';
+    src: url('palatino-linotype.woff2') format('woff2'),
+         url('palatino-linotype.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Georgia */
+@font-face {
+    font-family: 'Georgia';
+    src: url('georgia.woff2') format('woff2'),
+         url('georgia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Trebuchet MS */
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('trebuchet-ms.woff2') format('woff2'),
+         url('trebuchet-ms.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+p {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+    
+    body {
+      font-family: 'Palatino Linotype' sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar container */
+    nav {
+      background-color: #4e342e;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Logo */
+    .logo {
+      color: #daa520;
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    /* Navbar links */
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #daa520;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #8b4513;
+    }
+
+    /* Search bar */
+    .search-bar {
+      background-color: #333;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      display: none; /* Initially hidden on small screens */
+    }
+
+    .search-bar::placeholder {
+      color: #daa520;
+    }
+
+    /* Hamburger menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      position: absolute;
+      right: 30px; /* Align to the right end */
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: #daa520;
+      border-radius: 2px;
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: 4rem 0;
+        margin: 0 auto;
+        background: #4e342e;
+    }
+    
+    .hero-container {
+        max-width: 1200px;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .hero-text {
+        color: #fff;
+        flex: 1;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+        padding: 0.6rem 1rem;
+        font-weight: bold;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    } 
+    
+    .hero-image {
+        flex: 1;
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero-image img {
+        width: 300px;
+        height: auto;
+    }
+    
+    .order-btn {
+        padding: 0.8rem 1rem;
+        background: #fff;
+        color: saddlebrown;
+        font-size: 1rem;
+        display: inline-flex;
+        margin-left: 1rem;
+        border: none;
+    }
+    
+    .order-btn span {
+        padding-right: 0.4rem;
+    }
+    
+    .explore-btn {
+        padding: 0.8rem 1rem;
+        background: transparent;
+        border: 1px solid #fff;
+        font-size: 1rem;
+        color: #fff;
+        margin-left: 0.6rem;
+    }
+    
+    .stats {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 3rem 2rem;
+    }
+    
+    .number {
+        font-size: 1.4rem;
+        font-weight: bold;
+        
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .search-bar.active {
+        display: block; /* Show search bar when active */
+        margin-top: 10px;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      
+      .hero-container {
+          flex-direction: column;
+          align-items: center;
+      }
+    }
