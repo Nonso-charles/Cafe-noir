@@ -111,14 +111,127 @@
   </section>
 
   <section class="shop" id="shop">
-    <div class="shop-header-container">
+    <div class="shop-container">
       <h2>Best Selling Item</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem excepturi nostrum voluptatem mollitia
         debitis ratione similique. Aut iusto doloribus totam reprehenderit.</p>
 
-
+             <div class="filter-links">
+            <a href="#" class="filter-link active" data-filter="all">All</a>
+            <a href="#" class="filter-link" data-filter="black">Black</a>
+            <a href="#" class="filter-link" data-filter="espresso">Espresso</a>
+            <a href="#" class="filter-link" data-filter="doppio">Doppio</a>
+        </div>
     </div>
+    
+            <div class="shop-items">
+            <!-- Black Coffee -->
+            <div class="shop-item black" data-name="Americano" data-price="1700">
+                <img src="black1.jpg" alt="Americano">
+                <h3>Americano</h3>
+                <p>₦15</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <!-- More items here... -->
+                        <div class="shop-item black" data-name="Long Black" data-price="1900">
+                <img src="black1.jpg" alt="Americano">
+                <h3>Long Black</h3>
+                <p>₦15</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item black" data-name="Red Eye" data-price="1850">
+                <img src="black1.jpg" alt="Americano">
+                <h3>Red Eye</h3>
+                <p>₦15</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item black" data-name="Turkish Coffee" data-price="1100">
+                <img src="black1.jpg" alt="Americano">
+                <h3>Turkish Coffee</h3>
+                <p>₦15</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item black" data-name="Cold Brew" data-price="1900">
+                <img src="black1.jpg" alt="Americano">
+                <h3>Cold Brew</h3>
+                <p>₦15</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+
+            <!-- Espresso -->
+            <div class="shop-item espresso" data-name="Ristretto" data-price="20">
+                <img src="espresso1.jpg" alt="Espresso 1">
+                <h3>Ristretto</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                       <div class="shop-item espresso" data-name="Lungo" data-price="3200">
+                <img src="espresso1.jpg" alt="Espresso 1">
+                <h3>Lungo</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item espresso" data-name="Macchiato" data-price="3400">
+                <img src="espresso1.jpg" alt="Espresso 1">
+                <h3>Macchiato</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item espresso" data-name="Cortado" data-price="3500">
+                <img src="espresso1.jpg" alt="Espresso 1">
+                <h3>Cortado</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item espresso" data-name="Affogado" data-price="3450">
+                <img src="espresso1.jpg" alt="Espresso 1">
+                <h3>Affogado</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <!-- Doppio -->
+            <div class="shop-item doppio" data-name="Classic Doppio" data-price="2500">
+                <img src="doppio1.jpg" alt="Doppio 1">
+                <h3>Classic Doppio</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+        
+            <div class="shop-item doppio" data-name="Doppio Con Panna" data-price="2700">
+                <img src="doppio1.jpg" alt="Doppio 1">
+                <h3>Doppio Con Panna</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item doppio" data-name="Doppio Macchiato" data-price="2900">
+                <img src="doppio1.jpg" alt="Doppio 1">
+                <h3>Doppio Macchiato</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item doppio" data-name="Doppio Lungo" data-price="2100">
+                <img src="doppio1.jpg" alt="Doppio 1">
+                <h3>Doppio Lungo</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+                        <div class="shop-item doppio" data-name="Doppio Ristretto" data-price="3000">
+                <img src="doppio1.jpg" alt="Doppio 1">
+                <h3>Doppio Ristretto</h3>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
   </section>
+  
+      <section class="cart-section">
+        <h2>Cart</h2>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <span>Total: </span><span id="cart-total">₦0</span>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Checkout</button>
+    </section>
 
   <script src="script.js"></script>
 </body>

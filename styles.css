@@ -298,6 +298,17 @@ nav {
   z-index: 1;
 }
 
+/* Shop section */
+.shop {
+    padding: 4rem 0;
+    text-align: center;
+    background: #B67E4A;
+}
+
+.shop-container h2 {
+    font-size: 2.5rem;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   nav {
@@ -329,6 +340,10 @@ nav {
   .hero-container {
     flex-direction: column;
     align-items: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
   }
 
   .content-row {
