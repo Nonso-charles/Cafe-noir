@@ -425,10 +425,11 @@ nav {
 }
 
 .testimonial-slider {
-  max-width: 90%;
+  max-width: 500px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .testimonial {
@@ -441,6 +442,8 @@ nav {
   position: relative;
   width: 100%;
   text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .testimonial.active {
@@ -456,7 +459,8 @@ nav {
   border: 3px solid white;
   position: absolute;
   top: -20%;
-  left: 40%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .testimonial p {
@@ -479,7 +483,7 @@ nav {
   cursor: pointer;
   padding: 0.8erem;
   transition: color 0.3s ease-in-out;
-  margin: 0 4rem;
+  margin: 0;
 }
 
 .nav-btn:hover {
@@ -618,5 +622,9 @@ nav {
 
   .newsletter-header h2 {
     width: 100%;
+  }
+  
+  .nav-btn {
+      display: none;
   }
 }
