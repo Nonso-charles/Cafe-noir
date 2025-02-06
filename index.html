@@ -7,6 +7,10 @@
   <title>Café Noir</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -116,122 +120,252 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem excepturi nostrum voluptatem mollitia
         debitis ratione similique. Aut iusto doloribus totam reprehenderit.</p>
 
-             <div class="filter-links">
-            <a href="#" class="filter-link active" data-filter="all">All</a>
-            <a href="#" class="filter-link" data-filter="black">Black</a>
-            <a href="#" class="filter-link" data-filter="espresso">Espresso</a>
-            <a href="#" class="filter-link" data-filter="doppio">Doppio</a>
-        </div>
+      <div class="filter-links">
+        <a href="#" class="filter-link active" data-filter="all">All</a>
+        <a href="#" class="filter-link" data-filter="black">Black</a>
+        <a href="#" class="filter-link" data-filter="espresso">Espresso</a>
+        <a href="#" class="filter-link" data-filter="doppio">Doppio</a>
+      </div>
     </div>
-    
-            <div class="shop-items">
-            <!-- Black Coffee -->
-            <div class="shop-item black" data-name="Americano" data-price="1700">
-                <img src="black1.jpg" alt="Americano">
-                <h3>Americano</h3>
-                <p>₦15</p>
-                <button class="order-btn">Order Now</button>
-            </div>
-            <!-- More items here... -->
-                        <div class="shop-item black" data-name="Long Black" data-price="1900">
-                <img src="black1.jpg" alt="Americano">
-                <h3>Long Black</h3>
-                <p>₦15</p>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item black" data-name="Red Eye" data-price="1850">
-                <img src="black1.jpg" alt="Americano">
-                <h3>Red Eye</h3>
-                <p>₦15</p>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item black" data-name="Turkish Coffee" data-price="1100">
-                <img src="black1.jpg" alt="Americano">
-                <h3>Turkish Coffee</h3>
-                <p>₦15</p>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item black" data-name="Cold Brew" data-price="1900">
-                <img src="black1.jpg" alt="Americano">
-                <h3>Cold Brew</h3>
-                <p>₦15</p>
-                <button class="order-btn">Order Now</button>
-            </div>
 
-            <!-- Espresso -->
-            <div class="shop-item espresso" data-name="Ristretto" data-price="20">
-                <img src="espresso1.jpg" alt="Espresso 1">
-                <h3>Ristretto</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                       <div class="shop-item espresso" data-name="Lungo" data-price="3200">
-                <img src="espresso1.jpg" alt="Espresso 1">
-                <h3>Lungo</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item espresso" data-name="Macchiato" data-price="3400">
-                <img src="espresso1.jpg" alt="Espresso 1">
-                <h3>Macchiato</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item espresso" data-name="Cortado" data-price="3500">
-                <img src="espresso1.jpg" alt="Espresso 1">
-                <h3>Cortado</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item espresso" data-name="Affogado" data-price="3450">
-                <img src="espresso1.jpg" alt="Espresso 1">
-                <h3>Affogado</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-            <!-- Doppio -->
-            <div class="shop-item doppio" data-name="Classic Doppio" data-price="2500">
-                <img src="doppio1.jpg" alt="Doppio 1">
-                <h3>Classic Doppio</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-        
-            <div class="shop-item doppio" data-name="Doppio Con Panna" data-price="2700">
-                <img src="doppio1.jpg" alt="Doppio 1">
-                <h3>Doppio Con Panna</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item doppio" data-name="Doppio Macchiato" data-price="2900">
-                <img src="doppio1.jpg" alt="Doppio 1">
-                <h3>Doppio Macchiato</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item doppio" data-name="Doppio Lungo" data-price="2100">
-                <img src="doppio1.jpg" alt="Doppio 1">
-                <h3>Doppio Lungo</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-            
-                        <div class="shop-item doppio" data-name="Doppio Ristretto" data-price="3000">
-                <img src="doppio1.jpg" alt="Doppio 1">
-                <h3>Doppio Ristretto</h3>
-                <button class="order-btn">Order Now</button>
-            </div>
-        </div>
+    <div class="shop-items">
+      <!-- Black Coffee -->
+      <div class="shop-item black" data-name="Americano" data-price="1700">
+        <img
+          src="https://img.freepik.com/free-photo/cup-coffee-white-saucer_114579-20033.jpg?t=st=1738803883~exp=1738807483~hmac=7c0d810cfe4c995f451ebbf4895eda83477dec3b51c1e51fbc58bb6cf709766c&w=1060"
+          alt="Americano">
+        <h3>Americano</h3>
+        <p>₦1700</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+      <!-- More items here... -->
+      <div class="shop-item black" data-name="Long Black" data-price="1900">
+        <img
+          src="https://img.freepik.com/free-photo/high-angle-arrangement-with-black-coffee-cup_23-2148436991.jpg?t=st=1738803787~exp=1738807387~hmac=9388cf44bd7886d77fcca0a9d20fd71f7576a40a220dcd8c6e57036c74672633&w=1060"
+          alt="Americano">
+        <h3>Long Black</h3>
+        <p>₦1900</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item black" data-name="Red Eye" data-price="1850">
+        <img
+          src="https://img.freepik.com/free-photo/red-cup-hot-chocolate-with-leaf-design-foam_9975-124507.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Americano">
+        <h3>Red Eye</h3>
+        <p>₦1850</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item black" data-name="Turkish Coffee" data-price="1100">
+        <img
+          src="https://img.freepik.com/premium-photo/traditional-turkish-coffee-traditional-metal-cup-brown-table-with-turkish-delight-bokeh_181242-137.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Americano">
+        <h3>Turkish Coffee</h3>
+        <p>₦1100</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item black" data-name="Cold Brew" data-price="1900">
+        <img
+          src="https://img.freepik.com/premium-photo/cup-coffee-saucer-table_1021856-366.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Americano">
+        <h3>Cold Brew</h3>
+        <p>₦1900</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <!-- Espresso -->
+      <div class="shop-item espresso" data-name="Ristretto" data-price="3200">
+        <img
+          src="https://img.freepik.com/free-photo/hot-coffee-glass-wooden-table_1150-13458.jpg?t=st=1738803466~exp=1738807066~hmac=cc3b6e156f065ef142c293f80fe9d2a47cb4ce5fdec42259f214335c521f8e06&w=1060"
+          alt="Espresso 1">
+        <h3>Ristretto</h3>
+        <p>₦3200</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item espresso" data-name="Lungo" data-price="3200">
+        <img
+          src="https://img.freepik.com/premium-photo/glass-coffee-sits-plate-with-dark-background_534373-4218.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Espresso 1">
+        <h3>Lungo</h3>
+        <p>₦3200</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item espresso" data-name="Macchiato" data-price="3400">
+        <img
+          src="https://img.freepik.com/free-photo/close-up-tasty-beverage-with-cream_23-2148349609.jpg?t=st=1738803284~exp=1738806884~hmac=e9d1c1e6b3e9ee2a9bd15404a91f1dfd480bf556a32c654e2248de2757be6a93&w=1060"
+          alt="Espresso 1">
+        <h3>Macchiato</h3>
+        <p>₦3400</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item espresso" data-name="Cortado" data-price="3500">
+        <img
+          src="https://img.freepik.com/premium-photo/dalgona-whipped-coffee-instant-cream-iced-coffee_111869-1836.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Espresso 1">
+        <h3>Cortado</h3>
+        <p>₦3500</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item espresso" data-name="Affogado" data-price="3450">
+        <img
+          src="https://img.freepik.com/premium-photo/beautiful-latte-art-with-cup-coffee-hot_52681-771.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Espresso 1">
+        <h3>Affogado</h3>
+        <p>₦3450</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+      <!-- Doppio -->
+      <div class="shop-item doppio" data-name="Classic Doppio" data-price="2500">
+        <img
+          src="https://img.freepik.com/premium-photo/white-cup-coffee-white-background_56345-14.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Doppio 1">
+        <h3>Classic Doppio</h3>
+        <p>₦2500</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item doppio" data-name="Doppio Con Panna" data-price="2700">
+        <img
+          src="https://img.freepik.com/free-photo/cup-cappuccino-coffee-with-heart-shape-latte-art-wood-surface_23-2147936209.jpg?t=st=1738802981~exp=1738806581~hmac=1f669df75ea36ec911dba6ed8e967e2f615657838eb22a044bf7b4eff3982bb1&w=1380"
+          alt="Doppio 1">
+        <h3>Doppio Con Panna</h3>
+        <p>₦2700</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item doppio" data-name="Doppio Macchiato" data-price="2900">
+        <img
+          src="https://img.freepik.com/premium-photo/cup-coffee-with-saucer-spoon_975681-56196.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Doppio 1">
+        <h3>Doppio Macchiato</h3>
+        <p>₦2900</p>
+        <p></p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item doppio" data-name="Doppio Lungo" data-price="2100">
+        <img
+          src="https://img.freepik.com/premium-photo/cup-espresso-table_136375-1033.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Doppio 1">
+        <h3>Doppio Lungo</h3>
+        <p>₦2100</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+
+      <div class="shop-item doppio" data-name="Doppio Ristretto" data-price="3000">
+        <img
+          src="https://img.freepik.com/premium-photo/cup-coffee-glass-plate-wooden-table_182252-52.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+          alt="Doppio 1">
+        <h3>Doppio Ristretto</h3>
+        <p>₦3000</p>
+        <button class="shop-cta">Order Now</button>
+      </div>
+    </div>
   </section>
-  
-      <section class="cart-section">
-        <h2>Cart</h2>
-        <div class="cart-items"></div>
-        <div class="cart-total">
-            <span>Total: </span><span id="cart-total">₦0</span>
+
+  <section class="cart-section">
+    <h2>Cart</h2>
+    <div class="cart-items"></div>
+    <div class="cart-total">
+      <span>Total: </span><span id="cart-total">₦0</span>
+    </div>
+    <button id="checkout-btn" class="checkout-btn">Checkout</button>
+  </section>
+
+  <section class="testimonial-section">
+    <h2 class="testimonial-header">What Our Customer Says</h2>
+
+    <div class="testimonial-container">
+
+      <button class="nav-btn" id="prev"><i class="fas fa-arrow-left"></i></button>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p class="testimonial-quote">"Café Noir has become my go-to spot for a morning boost. Their espresso is bold
+            and smooth, and the ambience is just what i need to start myday. Highly recommended!"</p>
+          <img
+            src="https://img.freepik.com/free-photo/young-black-woman-with-afro-hair-laughing-enjoying_150588-161.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+            alt="">
+          <h3>Amaka O., Lagos</h3>
+          <div class="ratings">
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+          </div>
         </div>
-        <button id="checkout-btn" class="checkout-btn">Checkout</button>
-    </section>
+
+        <div class="testimonial">
+          <p class="testimonial-quote">"From their rich, aromatic brews to the cozy atmosphere, Café Noir is a haven for
+            coffee lovers. The baristas are friendly and know their craft!"</p>
+          <img
+            src="https://img.freepik.com/free-photo/worldface-american-man-white-background_53876-31194.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+            alt="">
+          <h3>Daniel M., Abuja</h3>
+          <div class="ratings">
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-quote">"I stumbled upon Café Noir while looking for a quiet place to work, and i'm so
+            glad i did. The cappuccino was perfection, and the customer service was top-notch!"</p>
+          <img
+            src="https://img.freepik.com/free-photo/portrait-afro-business-woman-standing-outdoors-street_58466-16303.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+            alt="">
+          <h3>Fatima S., Port Harcourt</h3>
+          <div class="ratings">
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-quote">"Café Noir serves the best black coffee i have ever had! The flavours are rich,
+            and the Café has a warm and inviting atmosphere. Can't wait to visit again!"</p>
+          <img
+            src="https://img.freepik.com/free-photo/portrait-afro-american-man_23-2148012827.jpg?ga=GA1.1.1776193460.1725468603&semt=ais_hybrid"
+            alt="">
+          <h3>Tobi A., Enugu</h3>
+          <div class="ratings">
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+            <i class="fas fa-star" style="color: #ffd700;"></i>
+          </div>
+        </div>
+      </div>
+
+      <button id="next" class="nav-btn"><i class="fas fa-arrow-right"></i></button>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <div class="newsletter-header">
+        <h2>Stay Up To Date On All News And Offers.</h2>
+      </div>
+      <div class="newsletter-form">
+        <p>Be The First To Know About New Collections, Special Events, And What's Going on At Kitchen</p>
+        <input type="text" id="newsletter-input" placeholder="Enter Your Email Address"><span><i
+            class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

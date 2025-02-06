@@ -44,7 +44,7 @@
     });
 
     // Handle "Order Now" button clicks
-    const orderButtons = document.querySelectorAll(".order-btn");
+    const orderButtons = document.querySelectorAll(".shop-cta");
     orderButtons.forEach(button => {
         button.addEventListener("click", function () {
             const itemName = this.parentElement.dataset.name;
@@ -91,6 +91,67 @@
             alert(`Checkout Successful! Total: ₦${cartTotal.textContent}`);
             cart = []; // Clear the cart after checkout
             updateCart();
+        }
+    });
+});
+
+// Slider logic
+document.addEventListener("DOMContentLoaded", function () {
+    const testimonials = document.querySelectorAll(".testimonial");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    let currentIndex = 0;
+    let autoSlide;
+
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.classList.remove("active");
+            if(i === index) {
+                testimonial.classList.add("active");
+            }
+        });
+    }
+
+    function nextTestimonial() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        showTestimonial(currentIndex);
+    }
+
+    function prevTestimonial () {
+     currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+     showTestimonial(currentIndex);
+    }
+
+    nextBtn.addEventListener("click", () => {
+        nextTestimonial();
+        resetAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevTestimonial();
+        resetAutoSlide();
+    });
+
+    function autoSlideTestimonials() {
+        autoSlide = setInterval(nextTestimonial, 3000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlide);
+        if (window.innerWidth <= 768) {
+            autoSlideTestimonials();
+        }
+    }
+
+    showTestimonial(currentIndex);
+
+    if(window.innerWidth <= 768) {
+        autoSlideTestimonials();
+    }
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth <= 768) {
+        resetAutoSlide();
         }
     });
 });
