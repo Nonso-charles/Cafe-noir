@@ -493,8 +493,9 @@ nav {
 /* Newsletter section */
 .newsletter-section {
   padding: 5rem 0;
-  background: #bf8040;
+  background: #3e2f2f;
   align-items: center;
+  color: #fff;
 }
 
 .newsletter-container {
@@ -537,6 +538,167 @@ nav {
   color: #fff;
   margin-left: -5px;
   font-size: 1rem;
+}
+
+/* Contact section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #bf8040;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.4rem;
+}
+
+.contact-container h2 {
+  font-size: 3rem;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background: transparent;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid #8b4513;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.submit-btn {
+  background: #8b4513;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: ;
+}
+
+/* Footer section */
+.footer {
+  padding: 4rem;
+  align-items: center;
+  background: #3e2f2f;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-container img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 1.3rem;
+}
+
+.line {
+  width: 2px;
+  height: 300px;
+  background: black;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo h3 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+}
+
+.contact {
+  flex: 1;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin: 1rem 0;
+}
+
+.contact span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.footer-socials {
+  flex-direction: 1;
+  max-width: 400px;
+}
+
+.socials-icon i {
+  margin-right: 0.7rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 0.9rem;
 }
 
 /* Responsive design */
@@ -623,8 +785,34 @@ nav {
   .newsletter-header h2 {
     width: 100%;
   }
-  
+
   .nav-btn {
-      display: none;
+    display: none;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-container h2 {
+    font-size: 2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-socials img {
+    width: 70%;
+  }
+
+  .line {
+    display: none;
   }
 }
