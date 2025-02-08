@@ -96,7 +96,9 @@ nav {
   color: #fff;
   font-size: 14px;
   outline: none;
-  display: none; /* Initially hidden on small screens */
+  display: none;
+  width: 50%;
+  border-bottom: none;
 }
 
 .search-bar::placeholder {
@@ -464,7 +466,7 @@ nav {
 }
 
 .testimonial p {
-  font: 1rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 0.9rem 0;
 }
@@ -481,9 +483,9 @@ nav {
   font-size: 2rem;
   color: #3e2f2f;
   cursor: pointer;
-  padding: 0.8erem;
+  padding: 0.8rem;
   transition: color 0.3s ease-in-out;
-  margin: 0;
+  margin: 0 12rem;
 }
 
 .nav-btn:hover {
@@ -650,7 +652,7 @@ textarea {
 .line {
   width: 2px;
   height: 300px;
-  background: black;
+  background: white;
 }
 
 .footer-logo {
@@ -699,6 +701,35 @@ textarea {
   text-align: center;
   margin-top: 5rem;
   font-size: 0.9rem;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  border-right: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+#backToTop:hover .back-to-top-icon {
+  transform: scale(1.1);
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Responsive design */
